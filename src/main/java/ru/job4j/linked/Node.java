@@ -14,7 +14,7 @@ public class Node<T> {
         return next;
     }
 
-    public void setNext (Node<T> next) {
+    public void setNext(Node<T> next) {
         throw new IllegalStateException(
                 String.format("Node cannot be changed!")
         );
@@ -24,7 +24,7 @@ public class Node<T> {
         return value;
     }
 
-    public void setValue (final T value) {
+    public void setValue(final T value) {
         throw new IllegalStateException(
                 String.format("Value cannot be changed!")
         );
