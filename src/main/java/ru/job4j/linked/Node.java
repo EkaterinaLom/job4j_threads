@@ -1,6 +1,6 @@
 package ru.job4j.linked;
 
-public class Node<T> {
+public final class Node<T> {
 
     private final Node<T> next;
     private final T value;
@@ -14,19 +14,7 @@ public class Node<T> {
         return next;
     }
 
-    public void setNext(Node<T> next) {
-        throw new IllegalStateException(
-                String.format("Node cannot be changed!")
-        );
-    }
-
     public T getValue() {
         return value;
-    }
-
-    public void setValue(final T value) {
-        throw new IllegalStateException(
-                String.format("Value cannot be changed!")
-        );
     }
 }
